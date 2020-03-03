@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background: #eee;
+    height: auto;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+#landing {
+    background: #fff;
+}
+
+#landing-text {
+    display: flex;
+    flex: 0 1 40vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#landing-text h2 {
+    color: #888;
+}
+
+#landing-image {
+    background: url(https://source.unsplash.com/W6wKfTs5Rxc);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    flex: 0 1 60vw;
+    margin: 0;
+}
+
+.btn_top {
+    display: inline-block;
+    border-radius: 50px;
+    border: 1px #ccc solid;
+    text-decoration: none;
+    color: #333;
+    padding: 0.25rem 1rem;
+    transition: background 500ms ease;
+}
+
+.btn_top:hover {
+    background: #dbdbdb;
+}
+
+#btn_top_dark {
+    color: #fff;
+}
+
+#btn_top_dark:hover {
+    color: #333;
+}
+
+.btn {
+    padding: 0.5rem 2rem;
+    border: 1px #ccc solid;
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333;
+    transition: background 500ms ease;
+}
+
+.btn:hover {
+    background: #f4f4f4;
+}
+
+#header {
+    padding: 1.5rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+#header h2 {
+    border-left: dotted 1px #fff;
+    border-right: dotted 1px #fff;
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.caption {
+    padding: 0.8rem;
+    text-align: center;
+}
+
+#btn_read {
+    display: inline-block;
+    border-radius: 50px;
+    border: 1px #ccc solid;
+    text-decoration: none;
+    color: #333;
+    padding: 0.25rem 1rem;
+    transition: background 500ms ease;
+}
+
+#btn_read:hover {
+    background: #333;
+    color: #fff;
+}
+
+#btn_read:focus {
+    outline: 0;
+}
+
+ul {
+    list-style-position: inside;
+    text-align: justify;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: auto;
+    color: #333;
+}
+
+footer h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+
+/*----------------------------------------*/
+
+
+/*שאילתות במקרה שגודל המסך משתנה*/
+
+
+/*Screen Sizes 500px and up*/
+
+@media(min-width: 500px) {
+    #landing {
+        display: flex;
+        height: 100%;
+    }
+    #landing-text {
+        height: 100vh;
+    }
+    #landing-image {
+        height: 100vh;
+    }
+}
+
+
+/*Screen Sizes 700px and Up*/
+
+@media(min-width: 700px) {
+    .btn {
+        padding: 1rem 3rem;
+    }
+}
+
+
+/*----------------------------------------*/
+
+
+/*---effects---*/
+
+.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+.glow {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+/*אפקט כתב זוהר*/
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0058e6, 0 0 20px #0058e6, 0 0 25px #0058e6, 0 0 30px #0058e6, 0 0 35px #0058e6;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 15px #4dbeff, 0 0 20px #4dbeff, 0 0 25px #4dbeff, 0 0 30px #4dbeff, 0 0 35px #4dbeff, 0 0 40px #4dbeff;
+    }
+}
